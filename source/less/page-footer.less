@@ -1,0 +1,13 @@
+@import "variables";
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

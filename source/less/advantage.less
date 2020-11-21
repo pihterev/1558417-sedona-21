@@ -1,11 +1,66 @@
 @import "variables";
+@basis-advantage:255px;
 
-.advantage__main-info {
-  color: @title-color;
-  background-color: @text-color;
+.advantage {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 3;
+  }
+
+  @media (min-width: @desktop-width){
+    flex-basis: 1200px;
+  }
 }
 
-.advantage__main-info--blue {
+.advantage__main-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px;
+  color: @title-color;
+  background-color: @text-color;
+
+  @media (min-width: @tablet-width) {
+    flex-basis: @basis-advantage;
+    flex-grow: 1;
+  }
+}
+
+.advantage__main-info--primary {
   color: @secondary-color;
   background-color: @background-info;
+}
+
+.advantage__description {
+  margin-top: 15px;
+}
+
+.advantage__image {
+  width: 100%;
+  height: 100%;
+}
+
+.advantage__image-wrap {
+  @media (min-width: @tablet-width) {
+    height: 256px;
+    flex-grow: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-basis: 700px;
+  }
+}
+
+.advantage--reverse {
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
+  }
+}
+
+.advantage--short {
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    flex-basis: @basis-advantage;
+  }
 }

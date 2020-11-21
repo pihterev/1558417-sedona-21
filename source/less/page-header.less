@@ -1,0 +1,22 @@
+@import "variables";
+
+.page-header {
+  height: 56px;
+  display: flex;
+}
+
+.page-header__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.page-header__main-nav {
+  position: absolute;
+  right: 20px;
+  top:17px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    top:0;
+  }
+}
