@@ -1,7 +1,12 @@
 @import "variables";
 
 .slogan {
+  padding: 20px 60px 0;
   font-weight: bold;
   font-size: @title-font-size;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 20px 130px 0;
+  }
 }

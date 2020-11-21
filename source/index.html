@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page-body">
 <header class="page-header page-body__page-header">
-  <a class="page-header__logo logo">
-    <img class="logo__image" src="https://via.placeholder.com/186x96" alt="HTML Academy: Седона">
+  <a class="page-header__logo logo" href="/">
+    <img class="logo__image" src="https://via.placeholder.com/101x84" alt="HTML Academy: Седона">
   </a>
   <nav class="main-nav page-header__main-nav">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -40,82 +41,90 @@
 </header>
 <main class="page-main page-body__page-main">
   <div class="page-main__picture main-picture">
-    <img class="main-picture__image" src="https://via.placeholder.com/1200x518" alt="СЕДОНА">
+    <img class="main-picture__image" src="https://via.placeholder.com/320x318" alt="СЕДОНА">
   </div>
   <h1 class="slogan">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
+  <div class="page-main__description">
+    Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+  </div>
   <section class="advantages page-main__advantages">
-    <div class="advantages__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</div>
     <div class="advantages__list">
       <div class="advantage">
-        <div class="advantage__main-info advantage__main-info--blue">
+        <div class="advantage__main-info advantage__main-info--primary">
           <div class="advantage__title">Настоящий городок</div>
           <div class="advantage__number">— №1 —</div>
           <div class="advantage__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</div>
         </div>
-        <div class="advantage__image">
-          <img src="https://via.placeholder.com/560x260" alt="Седона">
+        <div class="advantage__image-wrap">
+          <img class="advantage__image" src="https://via.placeholder.com/320x200" alt="Седона">
         </div>
         <div class="advantage__bonus">
           <div class="bonus-item">
             <div class="bonus-item__icon">
               <img src="https://via.placeholder.com/74" alt="Жилье">
             </div>
-            <div class="bonus-item__title">
-              Жилье
-            </div>
-            <div class="bonus-item__description">
-              Рекомендуем пожить в настоящем мотеле, все как в кино!
+            <div class="bonus-item__info">
+              <div class="bonus-item__title">
+                Жилье
+              </div>
+              <div class="bonus-item__description">
+                Рекомендуем пожить в настоящем мотеле, все как в кино!
+              </div>
             </div>
           </div>
           <div class="bonus-item">
             <div class="bonus-item__icon">
               <img src="https://via.placeholder.com/74" alt="Сувениры">
             </div>
-            <div class="bonus-item__title">
-              Сувениры
-            </div>
-            <div class="bonus-item__description">
-              Не только китайского, но и местного производства!
+            <div class="bonus-item__info">
+              <div class="bonus-item__title">
+                Сувениры
+              </div>
+              <div class="bonus-item__description">
+                Не только китайского, но и местного производства!
+              </div>
             </div>
           </div>
           <div class="bonus-item">
             <div class="bonus-item__icon">
               <img src="https://via.placeholder.com/74" alt="ЕДА">
             </div>
-            <div class="bonus-item__title">
-              ЕДА
-            </div>
-            <div class="bonus-item__description">
-              Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+            <div class="bonus-item__info">
+              <div class="bonus-item__title">
+                ЕДА
+              </div>
+              <div class="bonus-item__description">
+                Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="advantage advantage--reverse">
-        <div class="advantage__main-info advantage__main-info--blue">
+        <div class="advantage__main-info advantage__main-info--primary">
           <div class="advantage__title">ТАМ ЕСТЬ Мост дьявола</div>
           <div class="advantage__number">— №2 —</div>
           <div class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
         </div>
-        <div class="advantage__image">
-          <img src="https://via.placeholder.com/560x260" alt="Седона">
+        <div class="advantage__image-wrap">
+          <img class="advantage__image" src="https://via.placeholder.com/320x200" alt="Седона">
         </div>
       </div>
-      <div class="advantage">
+      <div class="advantage advantage--short">
         <div class="advantage__main-info">
           <div class="advantage__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</div>
           <div class="advantage__number">— №3 —</div>
           <div class="advantage__description">ВСЕ интересные места находятся очень близко</div>
         </div>
       </div>
-      <div class="advantage">
+      <div class="advantage advantage--short">
         <div class="advantage__main-info">
           <div class="advantage__title">КРАСИВАЯ ДОРОГА</div>
           <div class="advantage__number">— №4 —</div>
           <div class="advantage__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</div>
         </div>
       </div>
-      <div class="advantage">
+      <div class="advantage advantage--short">
         <div class="advantage__main-info">
           <div class="advantage__title">МАЛО ТУРИСТОВ</div>
           <div class="advantage__number">— №5 —</div>
@@ -132,7 +141,7 @@
     </div>
   </section>
   <section class="map">
-    <img src="https://via.placeholder.com/1200x350" alt="Карта">
+    <img class="map__image" src="https://via.placeholder.com/320x350" alt="Карта">
   </section>
 </main>
 

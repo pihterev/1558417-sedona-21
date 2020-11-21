@@ -1,6 +1,27 @@
+@import "variables";
+
 .main-nav__toggle {
   border: none;
   width: 22px;
   height: 22px;
   background: url("../img/icon-menu.svg");
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__wrapper {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
