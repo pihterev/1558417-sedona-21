@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page-body">
 <header class="page-header page-body__page-header">
@@ -48,48 +49,64 @@
   </div>
   <section class="media">
     <div class="photos-list  media__photos-list">
-      <div class="photos-list__item photo">
-        <div class="photo__thumb">
-          <img src="https://via.placeholder.com/280" alt="Фото">
+      <div class="photos-list__item photo photos-list__item--fullscreen">
+        <div class="photo__thumb-wrap">
+          <img class="photo__thumb" src="https://via.placeholder.com/280" alt="Фото">
         </div>
-        <div class="photo__title">неродные просторы</div>
-        <div class="photo__author">Автор фото: Борис</div>
-        <div class="photo__like like">
-          <div class="like__icon"></div>
-          <div class="like__count">1350</div>
-        </div>
-      </div>
-      <div class="photos-list__item photo">
-        <div class="photo__thumb">
-          <img src="https://via.placeholder.com/280" alt="Фото">
-        </div>
-        <div class="photo__title">Местная растительность</div>
-        <div class="photo__author">Автор фото: Сергей</div>
-        <div class="photo__like like">
-          <div class="like__icon"></div>
-          <div class="like__count">143</div>
+        <div class="photo__tooltip">
+          <div class="photo__description">
+            <div class="photo__title">неродные просторы</div>
+            <div class="photo__author">Автор фото: Борис</div>
+          </div>
+          <div class="photo__like like">
+            <div class="like__icon"></div>
+            <div class="like__count">1350</div>
+          </div>
         </div>
       </div>
       <div class="photos-list__item photo">
-        <div class="photo__thumb">
-          <img src="https://via.placeholder.com/280" alt="Фото">
+        <div class="photo__thumb-wrap">
+          <img class="photo__thumb" src="https://via.placeholder.com/280" alt="Фото">
         </div>
-        <div class="photo__title">Дорога на север</div>
-        <div class="photo__author">Автор фото: Петр</div>
-        <div class="photo__like like">
-          <div class="like__icon"></div>
-          <div class="like__count">96</div>
+        <div class="photo__tooltip">
+          <div class="photo__description">
+            <div class="photo__title">Местная растительность</div>
+            <div class="photo__author">Автор фото: Сергей</div>
+          </div>
+          <div class="photo__like like">
+            <div class="like__icon"></div>
+            <div class="like__count">143</div>
+          </div>
         </div>
       </div>
       <div class="photos-list__item photo">
-        <div class="photo__thumb">
-          <img src="https://via.placeholder.com/280" alt="Фото">
+        <div class="photo__thumb-wrap">
+          <img class="photo__thumb" src="https://via.placeholder.com/280" alt="Фото">
         </div>
-        <div class="photo__title">Мост дьявола</div>
-        <div class="photo__author">Автор фото: Антон</div>
-        <div class="photo__like like">
-          <div class="like__icon"></div>
-          <div class="like__count">254</div>
+        <div class="photo__tooltip">
+          <div class="photo__description">
+            <div class="photo__title">Дорога на север</div>
+            <div class="photo__author">Автор фото: Петр</div>
+          </div>
+          <div class="photo__like like">
+            <div class="like__icon"></div>
+            <div class="like__count">96</div>
+          </div>
+        </div>
+      </div>
+      <div class="photos-list__item photo">
+        <div class="photo__thumb-wrap">
+          <img class="photo__thumb" src="https://via.placeholder.com/280" alt="Фото">
+        </div>
+        <div class="photo__tooltip">
+          <div class="photo__description">
+            <div class="photo__title">Мост дьявола</div>
+            <div class="photo__author">Автор фото: Антон</div>
+          </div>
+          <div class="photo__like like">
+            <div class="like__icon"></div>
+            <div class="like__count">254</div>
+          </div>
         </div>
       </div>
     </div>
@@ -98,9 +115,7 @@
       <div class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
         раз!
       </div>
-      <div class="video__player">
-        <img src="https://via.placeholder.com/280" alt="Видео">
-      </div>
+      <img class="video__player" src="https://via.placeholder.com/280" alt="Видео">
     </div>
   </section>
 </main>

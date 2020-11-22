@@ -1,4 +1,26 @@
+@import "variables";
+
+.photos-list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .photos-list__item {
-  padding: 10px;
   border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    flex: 0 1 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex: 1 1 33%;
+  }
+}
+
+.photos-list__item--fullscreen {
+  @media (min-width: @tablet-width) {
+    flex: 2 1 100%;
+  }
 }
