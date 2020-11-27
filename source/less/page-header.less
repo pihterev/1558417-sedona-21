@@ -1,13 +1,26 @@
 @import "variables";
 
 .page-header {
+  position: relative;
   height: 56px;
-  display: flex;
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.page-header__logo-wrap {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .page-header__logo {
   display: block;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .page-header__main-nav {
@@ -16,7 +29,9 @@
   top: 17px;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    margin: 0 50px;
+    position: relative;
+    right: 0;
     top: 0;
   }
 }

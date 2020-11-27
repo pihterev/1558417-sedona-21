@@ -1,3 +1,34 @@
+@import "variables";
+
+.site-list {
+  padding: 16px 0 0 0;
+  margin: 0;
+}
+
 .site-list__item {
+  cursor: pointer;
   font-weight: bold;
+}
+
+.site-list__item--empty {
+  width: 101px;
+  visibility: hidden;
+}
+
+
+.site-list__item-link {
+  text-decoration: none;
+  color: @title-color;
+
+  &:hover {
+    color: #81b3d2;
+  }
+}
+
+.site-list__item--active .site-list__item-link {
+  color: #766357;
+
+  &:hover {
+    color: #604e43;
+  }
 }

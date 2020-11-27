@@ -1,27 +1,83 @@
 @import "variables";
 
 .bonus-item__title {
+  margin-bottom: 15px;
   font-weight: bold;
   font-size: @title-font-size;
   align-items: center;
   color: @title-color;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
 }
 
 .bonus-item {
   display: flex;
+  margin-bottom: 2px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   @media (min-width: @desktop-width) {
     padding: 10px;
-    flex-direction: column;
-    align-items: center;
+  }
+}
+
+.bonus-item--gift {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+}
+
+.bonus-item--burger {
+  @media (min-width: @tablet-width) {
+    order: 1;
   }
 }
 
 .bonus-item__info {
+  flex: 1 1;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: @desktop-width) {
+    text-align: center;
+  }
+}
+
+.bonus-item__icon {
+  flex-basis: 40px;
+  margin-right: 10px;
+  height: 37px;
+  background: no-repeat center;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 72px;
+    flex-basis: 72px;
+    width: 72px;
+    background-size: contain;
+  }
+}
+
+.bonus-item__icon--house {
+  background-image: url("../img/bonus/icon-house.svg");
+}
+
+.bonus-item__icon--gift {
+  background-image: url("../img/bonus/icon-gift.svg");
+}
+
+.bonus-item__icon--burger {
+  background-image: url("../img/bonus/icon-burger.svg");
+}
+
+.bonus-item__description {
+  @media (min-width: @tablet-width) {
     text-align: center;
   }
 }

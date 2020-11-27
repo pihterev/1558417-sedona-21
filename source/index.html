@@ -8,30 +8,33 @@
 </head>
 <body class="page-body">
 <header class="page-header page-body__page-header">
-  <a class="page-header__logo logo" href="/">
-    <img class="logo__image" src="https://via.placeholder.com/101x84" alt="HTML Academy: Седона">
-  </a>
+  <div class="page-header__logo-wrap">
+    <a class="page-header__logo logo" href="/">
+      <i class="logo__image"></i>
+    </a>
+  </div>
   <nav class="main-nav page-header__main-nav">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a>
+          <a class="site-list__item-link">
             Главная
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="catalog.html">
+        <li class="site-list__item ">
+          <a href="catalog.html" class="site-list__item-link">
             Фото и видео
           </a>
         </li>
+        <li class="site-list__item site-list__item--empty"></li>
         <li class="site-list__item">
-          <a href="catalog.html">
+          <a href="catalog.html" class="site-list__item-link">
             Форма отзыва
           </a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru">
+          <a href="https://htmlacademy.ru" class="site-list__item-link">
             HTML Academy
           </a>
         </li>
@@ -41,28 +44,29 @@
 </header>
 <main class="page-main page-body__page-main">
   <div class="page-main__picture main-picture">
-    <img class="main-picture__image" src="https://via.placeholder.com/320x318" alt="СЕДОНА">
+    <div class="main-picture__image"></div>
+    <div class="main-picture__text"></div>
+    <div class="main-picture__bottom"></div>
   </div>
   <h1 class="slogan">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
   <div class="page-main__description">
     Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
   </div>
   <section class="advantages page-main__advantages">
+    <div class="advantages__header"></div>
     <div class="advantages__list">
       <div class="advantage">
-        <div class="advantage__main-info advantage__main-info--primary">
+        <div class="advantage__main-info advantage__main-info--primary advantage__main-info--first">
           <div class="advantage__title">Настоящий городок</div>
           <div class="advantage__number">— №1 —</div>
           <div class="advantage__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</div>
         </div>
         <div class="advantage__image-wrap">
-          <img class="advantage__image" src="https://via.placeholder.com/320x200" alt="Седона">
+          <div class="advantage__image advantage__image--city"></div>
         </div>
         <div class="advantage__bonus">
           <div class="bonus-item">
-            <div class="bonus-item__icon">
-              <img src="https://via.placeholder.com/74" alt="Жилье">
-            </div>
+            <div class="bonus-item__icon bonus-item__icon--house"></div>
             <div class="bonus-item__info">
               <div class="bonus-item__title">
                 Жилье
@@ -72,10 +76,8 @@
               </div>
             </div>
           </div>
-          <div class="bonus-item">
-            <div class="bonus-item__icon">
-              <img src="https://via.placeholder.com/74" alt="Сувениры">
-            </div>
+          <div class="bonus-item bonus-item--gift">
+            <div class="bonus-item__icon bonus-item__icon--gift"></div>
             <div class="bonus-item__info">
               <div class="bonus-item__title">
                 Сувениры
@@ -85,10 +87,8 @@
               </div>
             </div>
           </div>
-          <div class="bonus-item">
-            <div class="bonus-item__icon">
-              <img src="https://via.placeholder.com/74" alt="ЕДА">
-            </div>
+          <div class="bonus-item bonus-item--burger">
+            <div class="bonus-item__icon bonus-item__icon--burger"></div>
             <div class="bonus-item__info">
               <div class="bonus-item__title">
                 ЕДА
@@ -107,7 +107,7 @@
           <div class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
         </div>
         <div class="advantage__image-wrap">
-          <img class="advantage__image" src="https://via.placeholder.com/320x200" alt="Седона">
+          <div class="advantage__image advantage__image--bridge"></div>
         </div>
       </div>
       <div class="advantage advantage--short">
@@ -137,11 +137,13 @@
     <div class="contact-form__title">ЗАИНТЕРЕСОВАЛИСЬ?</div>
     <div class="contact-form__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</div>
     <div class="contact-form__button">
-      <button class="button">Найти гостиницу</button>
+      <button class="button">
+        <span class="button__text">Найти гостиницу</span>
+      </button>
     </div>
   </section>
   <section class="map">
-    <img class="map__image" src="https://via.placeholder.com/320x350" alt="Карта">
+    <div class="map__image"></div>
   </section>
 </main>
 
@@ -151,15 +153,31 @@
   </div>
   <div class="page-footer__social social">
     <ul class="social__list">
-      <li class="social__item social__item--twitter"></li>
-      <li class="social__item social__item--facebook"></li>
-      <li class="social__item social__item--youtube"></li>
+      <li class="social__item">
+        <a class="social__item-link" href="https://twitter.com">
+          <i class="social__item-icon social__item-icon--twitter"></i>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__item-link" href="https://facebook.com">
+          <i class="social__item-icon social__item-icon--facebook"></i>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__item-link" href="https://youtube.com">
+          <i class="social__item-icon social__item-icon--youtube"></i>
+        </a>
+      </li>
     </ul>
   </div>
   <div class="page-footer__copyright copyright">
-    <b class="copyright__text">Разработано:</b>
+    <span class="copyright__text">Разработано</span>
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <i class="copyright__icon"></i>
+      <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="copyright__icon-path"
+          d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+          fill="black"/>
+      </svg>
     </a>
   </div>
 </footer>

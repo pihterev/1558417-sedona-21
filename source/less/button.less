@@ -10,4 +10,21 @@
   background-color: @background-info;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @color-hover;
+  }
+
+  &:active {
+    background-color: @color-active;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active .button__text {
+    opacity: 0.3;
+  }
 }

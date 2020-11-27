@@ -1,21 +1,44 @@
 @import "variables";
 
 .social__item {
+  margin: 3px;
   width: 46px;
   height: 48px;
   background-color: @background-info;
-  background-repeat: no-repeat;
-  background-position: center;
+
+  &:hover {
+    background-color: @color-hover;
+  }
+
+  &:active {
+    background-color: @color-active;
+  }
 }
 
-.social__item--twitter {
+.social__item-link {
+  text-decoration: none;
+}
+
+.social__item-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__item-icon--twitter {
   background-image: url("../img/social/icon-twitter.svg");
 }
 
-.social__item--youtube {
+.social__item-icon--youtube {
   background-image: url("../img/social/icon-youtube.svg");
 }
 
-.social__item--facebook {
+.social__item-icon--facebook {
   background-image: url("../img/social/icon-facebook.svg");
 }
