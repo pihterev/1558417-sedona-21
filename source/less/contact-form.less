@@ -2,6 +2,10 @@
 
 .contact-form {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .contact-form__title {
@@ -11,7 +15,8 @@
   text-align: center;
   color: @title-color;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
+    padding: 57px 10px 10px;
     font-size: 30px;
   }
 }
@@ -19,6 +24,14 @@
 .contact-form__description {
   line-height: 24px;
   padding: 10px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 22px 180px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 22px 400px;
+  }
 }
 
 .contact-form__button {
