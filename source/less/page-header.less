@@ -24,14 +24,15 @@
 }
 
 .page-header__main-nav {
-  position: absolute;
-  right: 20px;
-  top: 17px;
-
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     margin: 0 50px;
-    position: relative;
-    right: 0;
-    top: 0;
   }
+}
+
+.page-header__main-nav--show {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 0;
+  z-index: 3;
 }

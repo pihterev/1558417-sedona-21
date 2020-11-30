@@ -9,14 +9,17 @@
 
   @media (min-width: @tablet-width) {
     text-align: center;
+    font-size: 21px;
+    margin-bottom: 21px;
   }
 }
 
 .bonus-item {
   display: flex;
-  margin-bottom: 2px;
+  margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
+    flex-basis: 194px;
     flex-direction: column;
     align-items: center;
   }
@@ -44,6 +47,10 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 26px;
+  }
+
   @media (min-width: @desktop-width) {
     text-align: center;
   }
@@ -51,15 +58,14 @@
 
 .bonus-item__icon {
   flex-basis: 40px;
-  margin-right: 10px;
+  margin-right: 9px;
   height: 37px;
   background: no-repeat center;
-  background-size: cover;
 
   @media (min-width: @tablet-width) {
-    height: 72px;
-    flex-basis: 72px;
-    width: 72px;
+    height: 76px;
+    flex-basis: 76px;
+    width: 76px;
     background-size: contain;
   }
 }
@@ -77,6 +83,8 @@
 }
 
 .bonus-item__description {
+  line-height: 21px;
+
   @media (min-width: @tablet-width) {
     text-align: center;
   }

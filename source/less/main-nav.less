@@ -1,11 +1,15 @@
 @import "variables";
 
 .main-nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: 17px;
   border: none;
   width: 23px;
   height: 22px;
   cursor: pointer;
   background: url("../img/icon-menu.svg");
+  outline: none;
 
   &:hover {
     opacity: 0.6;
@@ -20,12 +24,20 @@
   }
 }
 
+.main-nav__toggle--close {
+  background: url("../img/icon-close.svg");
+}
+
 .main-nav__wrapper {
   display: none;
 
   @media (min-width: @tablet-width) {
     display: block;
   }
+}
+
+.main-nav__wrapper--show {
+  display: block;
 }
 
 .main-nav__list {
