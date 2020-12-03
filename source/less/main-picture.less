@@ -1,4 +1,39 @@
+@import "variables";
+
+.main-picture {
+  height: 390px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    height: 517px;
+  }
+}
+
 .main-picture__image {
   width: 100%;
-  height: 300px;
+  height: 100%;
+  background: url("../img/main-picture.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+.main-picture__text {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: 214px;
+  background: url("../img/text-index.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    top: 77px;
+    height: 350px;
+    background-size: contain;
+  }
+}
+
+.main-picture__bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 56px;
+  background: url("../img/main-picture-bottom.svg") no-repeat center;
 }

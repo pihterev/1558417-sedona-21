@@ -1,8 +1,24 @@
+@import "variables";
+
 .copyright__icon {
+  position: relative;
+  top: 4px;
+  margin-left: 12px;
   display: inline-block;
   width: 27px;
   height: 34px;
-  background: url("../img/htmlacademy.svg");
+
+  &:hover .copyright__icon-path {
+    fill: @background-info;
+  }
+
+  &:active {
+    .copyright__icon-path {
+      fill: black;
+    }
+
+    opacity: 0.3;
+  }
 }
 
 .copyright {

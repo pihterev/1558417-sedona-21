@@ -1,0 +1,26 @@
+@import "variables";
+
+.logo {
+  pointer-events: auto;
+  display: block;
+  width: 102px;
+  height: 84px;
+
+  @media (min-width: @desktop-width) {
+    width: 187px;
+    height: 97px;
+  }
+}
+
+.logo__image {
+  display: block;
+  width: 102px;
+  height: 84px;
+  background: url("../img/logotype-mobile.svg") no-repeat;
+
+  @media (min-width: @desktop-width) {
+    width: 187px;
+    height: 97px;
+    background: url("../img/header-logotype.svg");
+  }
+}

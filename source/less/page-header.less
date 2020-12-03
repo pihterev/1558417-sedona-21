@@ -1,22 +1,38 @@
 @import "variables";
 
 .page-header {
+  position: relative;
   height: 56px;
-  display: flex;
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.page-header__logo-wrap {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .page-header__logo {
   display: block;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .page-header__main-nav {
-  position: absolute;
-  right: 20px;
-  top: 17px;
-
-  @media (min-width: @tablet-width) {
-    width: 100%;
-    top: 0;
+  @media (min-width: @desktop-width) {
+    margin: 0 50px;
   }
+}
+
+.page-header__main-nav--show {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 0;
+  z-index: 3;
 }

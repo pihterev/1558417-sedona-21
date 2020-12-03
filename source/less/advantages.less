@@ -1,11 +1,50 @@
 @import "variables";
 
+.advantages {
+  position: relative;
+}
+
 .advantages__title {
   color: @default-color;
   text-align: center;
 }
 
+.advantages__header {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  top: -1px;
+  border-top: 16px solid @secondary-color;
+  background-color: @secondary-color;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 50%;
+    top: -17px;
+    background: @secondary-color;
+  }
+
+  &::before {
+    left: 0;
+    transform: skew(0deg, 6deg);
+  }
+
+  &::after {
+    right: 0;
+    transform: skew(0deg, -6deg);
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .advantages__list {
+  background-color: @text-color;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;

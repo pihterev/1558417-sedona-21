@@ -1,7 +1,7 @@
 @import "variables";
 
 .button {
-  padding: 14px 32px 17px;
+  padding: 15px 36px 17px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -10,4 +10,25 @@
   background-color: @background-info;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    padding: 15px 122px 17px;
+  }
+
+  &:hover {
+    background-color: @color-hover;
+  }
+
+  &:active {
+    background-color: @color-active;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active .button__text {
+    opacity: 0.3;
+  }
 }
